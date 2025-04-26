@@ -1,0 +1,21 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Student Management System with MERN Stack",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "cd server && yarn start",
+    "client": "cd client && yarn start",
+    "dev": "concurrently \"yarn run server\" \"yarn run client\"",
+    "build": "cd client && yarn install && yarn build",
+    "install-all": "yarn install && cd server && yarn install && cd ../client && yarn install",
+    "heroku-postbuild": "yarn run build"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 

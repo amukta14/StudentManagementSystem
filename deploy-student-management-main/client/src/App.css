@@ -1,0 +1,164 @@
+/* App.css */
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light and Dark mode colors */
+:root {
+  --bg-color: #f5f7fa;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --button-bg: #4caf50;
+  --button-hover: #45a049;
+  --navbar-bg: #6c63ff;
+  --link-color: #6c63ff;
+}
+
+.dark-mode {
+  --bg-color: #1f1f1f;
+  --text-color: #f5f5f5;
+  --card-bg: #2b2b2b;
+  --button-bg: #90caf9;
+  --button-hover: #64b5f6;
+  --navbar-bg: #333;
+  --link-color: #90caf9;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--navbar-bg);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navbar button {
+  background: var(--button-bg);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.navbar button:hover {
+  background: var(--button-hover);
+}
+
+/* Container */
+.container {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+/* Forms */
+form {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--card-bg);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+}
+
+th {
+  background-color: var(--navbar-bg);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Landing Page */
+.landing {
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.landing button {
+  font-size: 1.2rem;
+  padding: 12px 24px;
+}
